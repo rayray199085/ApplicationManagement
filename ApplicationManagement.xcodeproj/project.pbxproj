@@ -15,6 +15,10 @@
 		0D6E92D22208E6DE003C19B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6E92D12208E6DE003C19B4 /* main.m */; };
 		0D6E92DC2208E6DE003C19B4 /* ApplicationManagementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6E92DB2208E6DE003C19B4 /* ApplicationManagementTests.m */; };
 		0D6E92E72208E6DE003C19B4 /* ApplicationManagementUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6E92E62208E6DE003C19B4 /* ApplicationManagementUITests.m */; };
+		0D6E92F52208E6F7003C19B4 /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D6E92F42208E6F7003C19B4 /* app.plist */; };
+		0D6E92F82209105C003C19B4 /* SCApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6E92F72209105C003C19B4 /* SCApp.m */; };
+		0D6E92FA2209377B003C19B4 /* SCAppView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D6E92F92209377B003C19B4 /* SCAppView.xib */; };
+		0D6E92FD22094246003C19B4 /* SCAppView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6E92FC22094246003C19B4 /* SCAppView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		0D6E92E22208E6DE003C19B4 /* ApplicationManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationManagementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6E92E62208E6DE003C19B4 /* ApplicationManagementUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationManagementUITests.m; sourceTree = "<group>"; };
 		0D6E92E82208E6DE003C19B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6E92F42208E6F7003C19B4 /* app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = app.plist; sourceTree = "<group>"; };
+		0D6E92F62209105C003C19B4 /* SCApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCApp.h; sourceTree = "<group>"; };
+		0D6E92F72209105C003C19B4 /* SCApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCApp.m; sourceTree = "<group>"; };
+		0D6E92F92209377B003C19B4 /* SCAppView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCAppView.xib; sourceTree = "<group>"; };
+		0D6E92FB22094246003C19B4 /* SCAppView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppView.h; sourceTree = "<group>"; };
+		0D6E92FC22094246003C19B4 /* SCAppView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +111,12 @@
 		0D6E92C12208E6DC003C19B4 /* ApplicationManagement */ = {
 			isa = PBXGroup;
 			children = (
-				0D6E92C22208E6DC003C19B4 /* AppDelegate.h */,
-				0D6E92C32208E6DC003C19B4 /* AppDelegate.m */,
-				0D6E92C52208E6DC003C19B4 /* ViewController.h */,
-				0D6E92C62208E6DC003C19B4 /* ViewController.m */,
-				0D6E92C82208E6DC003C19B4 /* Main.storyboard */,
+				0D6E9309220953B6003C19B4 /* Others */,
+				0D6E9308220953AC003C19B4 /* Controllers */,
+				0D6E9307220953A6003C19B4 /* Models */,
+				0D6E93062209539D003C19B4 /* Views */,
+				0D6E92F42208E6F7003C19B4 /* app.plist */,
 				0D6E92CB2208E6DE003C19B4 /* Assets.xcassets */,
-				0D6E92CD2208E6DE003C19B4 /* LaunchScreen.storyboard */,
 				0D6E92D02208E6DE003C19B4 /* Info.plist */,
 				0D6E92D12208E6DE003C19B4 /* main.m */,
 			);
@@ -130,6 +139,45 @@
 				0D6E92E82208E6DE003C19B4 /* Info.plist */,
 			);
 			path = ApplicationManagementUITests;
+			sourceTree = "<group>";
+		};
+		0D6E93062209539D003C19B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D6E92CD2208E6DE003C19B4 /* LaunchScreen.storyboard */,
+				0D6E92C82208E6DC003C19B4 /* Main.storyboard */,
+				0D6E92F92209377B003C19B4 /* SCAppView.xib */,
+				0D6E92FB22094246003C19B4 /* SCAppView.h */,
+				0D6E92FC22094246003C19B4 /* SCAppView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0D6E9307220953A6003C19B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D6E92F62209105C003C19B4 /* SCApp.h */,
+				0D6E92F72209105C003C19B4 /* SCApp.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0D6E9308220953AC003C19B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D6E92C52208E6DC003C19B4 /* ViewController.h */,
+				0D6E92C62208E6DC003C19B4 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0D6E9309220953B6003C19B4 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				0D6E92C22208E6DC003C19B4 /* AppDelegate.h */,
+				0D6E92C32208E6DC003C19B4 /* AppDelegate.m */,
+			);
+			name = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +242,7 @@
 		0D6E92B72208E6DC003C19B4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SC;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Stephen Cao";
 				TargetAttributes = {
@@ -235,6 +284,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D6E92FA2209377B003C19B4 /* SCAppView.xib in Resources */,
+				0D6E92F52208E6F7003C19B4 /* app.plist in Resources */,
 				0D6E92CF2208E6DE003C19B4 /* LaunchScreen.storyboard in Resources */,
 				0D6E92CC2208E6DE003C19B4 /* Assets.xcassets in Resources */,
 				0D6E92CA2208E6DC003C19B4 /* Main.storyboard in Resources */,
@@ -263,7 +314,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D6E92C72208E6DC003C19B4 /* ViewController.m in Sources */,
+				0D6E92F82209105C003C19B4 /* SCApp.m in Sources */,
 				0D6E92D22208E6DE003C19B4 /* main.m in Sources */,
+				0D6E92FD22094246003C19B4 /* SCAppView.m in Sources */,
 				0D6E92C42208E6DC003C19B4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
